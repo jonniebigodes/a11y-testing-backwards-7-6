@@ -29,48 +29,48 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     variant: "primary",
-    children: "Primary Button",
+    children: "Primary",
   },
 };
 
 export const Secondary: Story = {
   args: {
     variant: "secondary",
-    children: "Secondary Button",
+    children: "Secondary",
   },
 };
 
 export const Outline: Story = {
   args: {
     variant: "outline",
-    children: "Outline Button",
+    children: "Outline",
   },
 };
 
 export const Small: Story = {
   args: {
     size: "small",
-    children: "Small Button",
+    children: "Small",
   },
 };
 
 export const Medium: Story = {
   args: {
     size: "medium",
-    children: "Medium Button",
+    children: "Medium",
   },
 };
 
 export const Large: Story = {
   args: {
     size: "large",
-    children: "Large Button",
+    children: "Large",
   },
 };
 
 export const Disabled: Story = {
   args: {
     disabled: true,
-    children: "Disabled Button",
+    children: "Disabled",
   },
 };
