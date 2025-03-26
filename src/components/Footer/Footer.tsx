@@ -515,7 +515,12 @@ export const Footer = () => {
         <FooterSection>
           <Logo theme={theme}>
             <BookOpen size={24} />
-            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+            <Link
+              to="/"
+              style={{ textDecoration: "none", color: "inherit" }}
+              role="img"
+              aria-hidden
+            >
               Testing Blog
             </Link>
           </Logo>
@@ -534,6 +539,8 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               theme={theme}
+              role="img"
+              aria-hidden="true"
             >
               <Twitter size={20} />
             </SocialIcon>
@@ -542,12 +549,16 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               theme={theme}
+              role="img"
+              aria-hidden="true"
             >
               <Github size={20} />
             </SocialIcon>
             <SocialIcon
               href="mailto:contact@testingblog.example.com"
               theme={theme}
+              role="img"
+              aria-hidden
             >
               <Mail size={20} />
             </SocialIcon>
@@ -555,33 +566,35 @@ export const Footer = () => {
         </FooterSection>
 
         <FooterSection>
-          <FooterTitle theme={theme}>Navigation</FooterTitle>
-          <FooterLink to="/" theme={theme}>
+          <FooterTitle theme={theme} role="img" aria-hidden="true">
+            Navigation
+          </FooterTitle>
+          <FooterLink to="/" theme={theme} role="img" aria-hidden="true">
             Home
           </FooterLink>
-          <FooterLink to="/about" theme={theme}>
+          <FooterLink to="/about" theme={theme} role="img" aria-hidden="true">
             About
           </FooterLink>
-          <ExternalLink href="#" theme={theme}>
+          <ExternalLink href="#" theme={theme} role="img" aria-hidden="true">
             Archives
           </ExternalLink>
-          <ExternalLink href="#" theme={theme}>
+          <ExternalLink href="#" theme={theme} role="img" aria-hidden="true">
             Tags
           </ExternalLink>
         </FooterSection>
 
         <FooterSection>
           <FooterTitle theme={theme}>Resources</FooterTitle>
-          <ExternalLink href="#" theme={theme}>
+          <ExternalLink href="#" theme={theme} role="img" aria-hidden="true">
             Documentation
           </ExternalLink>
-          <ExternalLink href="#" theme={theme}>
+          <ExternalLink href="#" theme={theme} role="img" aria-hidden="true">
             Privacy Policy
           </ExternalLink>
-          <ExternalLink href="#" theme={theme}>
+          <ExternalLink href="#" theme={theme} role="img" aria-hidden="true">
             Terms of Service
           </ExternalLink>
-          <ExternalLink href="#" theme={theme}>
+          <ExternalLink href="#" theme={theme} role="img" aria-hidden="true">
             Contact
           </ExternalLink>
         </FooterSection>
